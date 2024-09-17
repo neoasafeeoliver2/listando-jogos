@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --background-color: #330084;
+    --titulo-inicial: #f6db6e;
+    --text-color: #ffffff;
+    --text-shadow: #ffe14d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: 'RetroComputer';
+}
+
+.home-text{
+    background-image: url(assets/images/nuvems.png);
+    background-size: cover;
+    width: 100%;
+    height: 35vh;
+    margin-top: 5vh;
+}
+.home-text h1{
+    text-align: center;
+    font-size: 4em;
+    color: var(--titulo-inicial);
+    text-shadow: 1px 1px 4px var(--text-color);
+    padding: 10vh;
+}
+
+img#loja-imagem{
+    width: 25%;
+    margin: 0 37%;
+}
+
+.background-jogos{
+    background-image: url(assets/images/nuvems-jogos.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-jogos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 5rem auto;
+}
+
+.primeira-fileira, .segunda-fileira{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jogo img {
+    width: 300px;
+    cursor: pointer;
+}
+.jogo img:hover{
+    transition: 0.5s all;
+    transform: translateY(-8px);
+}
+
+.jogo p {
+    margin-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'fonteSecundaria';
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+
+.sessao-flutuante {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+  
+.sessao-content {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color);
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    height: 80vh;
+    padding: 10px;
+}
+:target {
+    display: flex;
+}
+
+.close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    text-decoration: none;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.imagens-modal{
+    display: flex;
+    gap: 10rem;
+}
+.imagens-modal p{
+    font-family: 'Poppins';
+    bottom: 60px; /* Ajusta a distância do texto para a parte inferior da imagem */
+    left: 0;
+    right: 0;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    color: var(--text-color);
+    z-index: 1; /* Garante que o texto fique acima da imagem */
+    padding: 10px;
+}
+
+.imagens-modal img#fliperama{
+    width: 40%;
+}
+
+#texto-com-imagem{
+    position: relative;
+}
+
+#texto-com-imagem img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#texto-com-imagem p{
+    position: absolute;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    flex-direction: column;
+    margin-top: 5rem;
+}
